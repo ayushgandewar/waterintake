@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Water Intake Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="butterfly"></div>
+  <div class="butterfly"></div>
+  <div class="butterfly"></div>
+
+  <div class="container">
+    <h1>💧 Water Intake Tracker</h1>
+    <p class="subtitle">Today's Water Intake<br><span>Goal: 8 cups per day</span></p>
+
+    <div class="tracker">
+      <div class="glass">
+        <div id="fill" class="fill"></div>
+      </div>
+      <p id="count">0 / 8 cups</p>
+    </div>
+
+    <div class="buttons" id="buttons"></div>
+
+    <button onclick="resetTracker()" class="reset">🔄 Reset Today</button>
+
+    <p id="goalMsg" class="goal-msg hidden">🎉 WOOHOO! Daily Goal Reached! 🎉</p>
+    <p id="motivationMsg" class="motivation-msg"></p>
+
+    <div class="fact-box" id="factBox">
+      ✨ <strong>Fun Fact of the Day</strong> ✨ <br>
+      Your body is about 60% water, and your brain is roughly 73% water.
+    </div>
+
+    <footer>Water Intake Tracker © 2025</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
